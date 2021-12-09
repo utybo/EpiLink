@@ -3,6 +3,9 @@ name: Build and test
 on:
   push:
     branches: [dev, master]
+    tags:
+      - 'v*.*.*'
+      - 'v*.*.*-beta*'
   pull_request:
 
 jobs:
